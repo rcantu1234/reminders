@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
 
-  devise_for :user
-  resources :user
+  devise_for :users
+  resources :users
 
-  resources :reminder
+  resources :reminders
 
   root 'users#index'
 

@@ -16,8 +16,6 @@
       <tr>
         <td><%= reminder.title %></td>
         <td><%= reminder.description %></td>
-        <td><%= reminder.select_duration :high %>
-        <td><%= reminder.select :role, options_for_select(%w[High Medium Low]) %>
         <td><%= link_to 'Show', reminder %></td>
         <td><%= link_to 'Edit', edit_reminder_path(reminder) %></td>
         <td><%= link_to 'Destroy', reminder, method: :delete, data: { confirm: 'Are you sure?' } %></td>
