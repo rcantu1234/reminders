@@ -5,6 +5,8 @@ Rails.application.routes.draw do
 
   resources :reminders
 
+  match '/signout', to: 'sessions#destroy', via: :delete
+
   root 'users#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

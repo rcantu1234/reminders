@@ -21,7 +21,7 @@
               <% end %>
               <li class='active'><%= link_to 'NEW USER', new_user_registration_path(@user) %></li>
               <li class='active'><%= link_to 'SIGN IN', new_user_session_path %></li>
-              <li class='active'><%= link_to 'SIGN OUT', destroy_user_session_path %></li>
+              <li class='active'><%= link_to 'SIGN OUT', destroy_user_session_path, method: "delete" %></li>
             </ul>
           </div>
         </div>
