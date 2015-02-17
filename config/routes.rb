@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
 
+  devise_for :user
+  resources :user do
+    resources :reminder
+  end
 
-  resources :users
 
-  resources :reminders
-
-  root 'reminders#index'
+  root 'users#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
